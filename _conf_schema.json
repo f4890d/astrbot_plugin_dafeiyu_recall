@@ -1,0 +1,20 @@
+{
+  "db_path": {
+    "description": "AstrBot 会话数据库路径",
+    "type": "string",
+    "hint": "留空则自动用 <AstrBot>/data/data_v4.db；只以只读方式打开，不会写入",
+    "default": ""
+  },
+  "max_quotes": {
+    "description": "一次最多返回几处命中",
+    "type": "int",
+    "hint": "1-12，默认 5；太多会把上下文撑大",
+    "default": 5
+  },
+  "max_chars": {
+    "description": "每句原话最多保留多少字",
+    "type": "int",
+    "hint": "40-300，默认 120，超出用省略号截断",
+    "default": 120
+  }
+}

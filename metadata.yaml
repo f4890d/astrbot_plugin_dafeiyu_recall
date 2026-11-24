@@ -1,0 +1,15 @@
+name: astrbot_plugin_dafeiyu_recall
+display_name: 原话账本
+desc: 让角色翻得到聊过的原话（只读 AstrBot 会话库），问「我上次怎么说的」时不再现编
+version: 0.1.0
+author: f4890d
+repo: https://github.com/f4890d/astrbot_plugin_dafeiyu_recall
+astrbot_version: ">=4.29,<5"
+support_platforms:
+  - aiocqhttp
+  - weixin_oc
+  - bluewhale
+  - webchat
+help: |
+  /翻记录 关键词    —— 直接翻当前会话里的原话
+  工具 recall_messages(keyword, scope)  —— 她自己在需要时调用，scope 可写「全部」
